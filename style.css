@@ -293,3 +293,4 @@
   .legal p, .legal address { color: var(--ink-soft); font-style: normal; font-size: 0.94rem; margin-bottom: 6px; }
   .legal a { color: var(--amber); }
   .legal a:hover { text-decoration: underline; }
+  .legal .todo { color: var(--magenta); font-style: normal; font-weight: 600; }
