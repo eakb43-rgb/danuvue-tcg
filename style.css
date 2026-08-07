@@ -265,6 +265,11 @@
   .info-card .kicker-sm { font-family: ui-monospace, monospace; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--amber); margin-bottom: 10px; display: block; }
   .info-card h3 { margin-bottom: 10px; font-size: 1rem; }
   .info-card p, .info-card address { color: var(--ink-soft); font-style: normal; font-size: 0.9rem; }
+  .route-link {
+    display: inline-block; margin-top: 12px;
+    color: var(--amber); font-weight: 600; font-size: 0.85rem;
+  }
+  .route-link:hover { text-decoration: underline; }
 
   /* ---------- Contact ---------- */
   .cta {
