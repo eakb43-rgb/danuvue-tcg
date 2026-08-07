@@ -251,6 +251,17 @@
   .tcard-event .fmt { color: var(--ink-soft); font-size: 0.78rem; margin-top: 2px; }
   .tcard-rest-txt { color: var(--ink-soft); font-size: 0.85rem; font-style: italic; margin: auto 0; text-align: center; }
 
+  /* On phones, swap the horizontal card carousel for a plain vertical list —
+     a horizontal scroller nested in a vertically scrolling page fights touch
+     swipes and makes the whole page feel like it scrolls "crooked". */
+  @media (max-width: 760px) {
+    .schedule-scroll { overflow-x: visible; padding: 20px 0 0; margin: 0; }
+    .schedule { flex-direction: column; min-width: 0; padding: 0; gap: 14px; }
+    .tcard { width: 100%; min-height: 0; transform: none; }
+    .tcard:hover { transform: none; }
+    .tcard:nth-child(odd), .tcard:nth-child(even) { --tilt: 0deg; }
+  }
+
   .note {
     margin-top: 8px; padding: 16px 20px; border-radius: 8px;
     background: var(--paper-2); border: 1px solid var(--line); border-left: 3px solid var(--amber);
